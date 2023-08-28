@@ -1,0 +1,42 @@
+.about{
+  padding: 3rem 7rem;
+  h2,h3{
+    text-align: center;
+  }
+  h2{
+    font-size: 3rem;
+  }
+  h3{
+    font-size: 2rem;
+  }
+  .description{
+    margin-top: 3.5rem;
+    display: flex;
+    article{
+      width: 50%;
+      padding-bottom: 2rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+      p{
+        font-size: 1.2rem;
+      }
+
+      *{
+        margin-bottom: 1rem;
+      }
+    }
+    .image{
+      height: 400px;
+      width: 50%;
+      background-color: aquamarine;
+    }
+  }
+  button{
+    padding: 1rem 2.5rem;
+    background-color: transparent;
+    border: 2px solid black;
+    font-size: 1.2rem;
+  }
+}

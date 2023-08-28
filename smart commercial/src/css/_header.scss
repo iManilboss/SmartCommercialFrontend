@@ -1,0 +1,62 @@
+//variables
+$text-center: center;
+
+//mixin for header and about
+@mixin flex-full{
+  padding: 3rem 5rem;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+li{
+  list-style-type: none;
+}
+
+a{
+  text-decoration: none;
+}
+
+header{
+  @include flex-full;
+
+  nav{
+    display: flex;
+    justify-content: space-between;
+    flex-basis: 1;
+    a{
+      font-size: 1.2rem;
+    }
+  }
+
+  .hero{
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    h1{
+      font-size: 6rem;
+      text-align: $text-center;
+    }
+  
+    p{
+      font-size: 1.2rem;
+      text-align: $text-center;
+    }
+
+    .cta{
+      padding: 1rem 2.5rem;
+      font-size: 1.1rem;
+      background-color: black;
+      color: white;
+      border-radius: 0.3rem;
+    }
+
+    *{
+      margin-bottom: 1.5rem;
+    }
+  }
+
+}
